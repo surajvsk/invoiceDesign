@@ -16,32 +16,46 @@
             body {
                 font-size: 10px;
             }
+            .image-cell {
+            text-align: right;
+        }
+
         }
         .duty_summary ul{
             list-style: none;
             padding: 0;
         }
-
         .duty_summary table{
             border: 1px solid black;
-  border-collapse: collapse;
+            border-collapse: collapse;
+        }
+        .image-cell {
+            text-align: right;
+        }
+
+        tr {
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <table class="table-bordered border-primary w-100">
+        <table class=" w-100">
             <tr>
-                <td><img src="image/logo.png" width="230"></td>
+                <td><img src="image/logo.png" width="200"></td>
                 <td>Vikas Center, S V Road, BEST Colony, Santacruz West,
                     Mumbai,<br>Maharashtra 400054, India<br>Tel.: 9619495878<br>Email: reservations@autoriders.in
                 </td>
-                <td rowspan="2"><img src="image/qr.jpg" width="230"></td>
+                <td rowspan="2" class="image-cell">
+                    <img src="image/qr.jpg" class="text-center" width="150" height="150">
+                  </td>
+                  
             </tr>
             <tr>
                 <td colspan="2">
-                    <ul>
+                    <ul class="list-unstyled">
                         <li>IRN: 1aa7fc6f03c0634f6dc5a646d34b465015beaebd38b0031c6d31220ea955a0fa</li>
                         <li>ACK NO: 122420151191762</li>
                         <li>ACK DATE: 12/02/2024 17:51</li>
@@ -49,7 +63,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="text-align:center" colspan="3">
+                <td class="border border-2" style="text-align:center" colspan="3">
                     TAX INVOICE
                 </td>
             </tr>
@@ -57,7 +71,7 @@
     </div>
 
     <div class="client-details">
-        <table class="table-bordered border-primary w-100">
+        <table class="w-100">
             <tr>
                 <td colspan="3">SHELL INDIA MARKETS PVT LTD</td>
                 <td colspan="3">*Original for recipient</td>
@@ -78,7 +92,7 @@
     </div>
   
     <div class="item-list">
-        <table class="table-bordered border-primary w-100">
+        <table class=" w-100">
             <thead>
                 <tr>
                     <td >SR</td>
@@ -118,11 +132,10 @@
                     <td>90.00</td>
                 </tr>
             </tbody>
-            <tfoot>
-                <tr>
+            <tfoot >
+                <tr class="border border-2">
                     <td></td>
                     <td></td>
-                    
                     <td></td>
                     <td>TAXABLE SUB TOTAL</td>
                     <td>2400.00</td>
@@ -155,7 +168,7 @@
                     <td>TOTAL TAX</td>
                     <td>102.00</td>
                 </tr>
-                <tr>
+                <tr class="border border-2">
                     <td colspan="3">In Words: Rupees Two Thousand One Hundred Forty Two Only</td>
                     <td>TOTAL</td>
                     <td>2142.00</td>
@@ -180,10 +193,10 @@
     </div>
 
 
-    <div class="duty_summary">
+    <div class="duty_summary  mt-4">
         <table class="w-100">
             <thead>
-                <tr>
+                <tr class="border border-2">
                     <td colspan="5" class=" text-center">DUTY SUMMARY</td>
                 </tr>
             </thead>
@@ -254,7 +267,7 @@
 
 
 
-    <div class="fast_tag_toll_summary">
+    <div class="fast_tag_toll_summary  mt-4">
         <table class="table-bordered border-primary w-100">
             <thead>
                 <tr>
@@ -295,7 +308,7 @@
     </div>
     
 
-    <div class="route_summary">
+    <div class="route_summary mt-4">
         <table class="table-bordered border-primary w-100">
             <thead>
                 <tr>
