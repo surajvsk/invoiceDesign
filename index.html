@@ -13,9 +13,11 @@
             }
     
             @media print {
-                body {
-                    font-size: 10px;
+
+                .page-break{
+                    visibility: hidden;
                 }
+    
                 .image-cell {
                 text-align: right;
             }
@@ -25,12 +27,12 @@
                 width: 100%;
                 top:0;
             }
-            .main-content{
-                position: relative;
-                top:176px;
-            }
+       
     
             }
+
+       
+
             .duty_summary ul{
                 list-style: none;
                 padding: 0;
@@ -57,9 +59,7 @@
                 position: relative;
                 top:176px;
             }
-            @page {
-                margin: 2mm
-            }
+           
         </style>
 </head>
 
