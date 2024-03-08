@@ -1,117 +1,323 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<title>A simple, clean, and responsive HTML invoice template</title>
 
-<head>
-  <style>
-  /* Styles go here */
+		<style>
 
-.page-header, .page-header-space {
-  height: 100px;
-}
 
-.page-footer, .page-footer-space {
-  height: 50px;
+			.invoice-box table {
+				width: 100%;
+				line-height: inherit;
+				text-align: left;
+			}
 
-}
+			.invoice-box table td {
+				padding: 5px;
+				vertical-align: top;
+			}
 
-.page-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border-top: 1px solid black; /* for demo */
-  background: yellow; /* for demo */
-}
+			.invoice-box table tr td:nth-child(2) {
+				text-align: right;
+			}
 
-.page-header {
-  position: fixed;
-  top: 0mm;
-  width: 100%;
-  border-bottom: 1px solid black; /* for demo */
-  background: yellow; /* for demo */
-}
+			.invoice-box table tr.top table td {
+				padding-bottom: 20px;
+			}
 
-.page {
-  page-break-after: always;
-}
+			.invoice-box table tr.top table td.title {
+				font-size: 45px;
+				line-height: 45px;
+				color: #333;
+			}
 
-@page {
-  margin: 20mm
-}
+			.invoice-box table tr.information table td {
+				padding-bottom: 40px;
+			}
 
-@media print {
-   thead {display: table-header-group;} 
-   tfoot {display: table-footer-group;}
-   
-   button {display: none;}
-   
-   body {margin: 0;}
-}
-  </style>
-</head>
+			.invoice-box table tr.heading td {
+				background: #eee;
+				border-bottom: 1px solid #ddd;
+				font-weight: bold;
+			}
 
-<body>
+			.invoice-box table tr.details td {
+				padding-bottom: 20px;
+			}
 
-  <div class="page-header" style="text-align: center">
-    I'm The Header
-    <br/>
-    <button type="button" onClick="window.print()" style="background: pink">
-      PRINT ME!
-    </button>
-  </div>
+			.invoice-box table tr.item td {
+				border-bottom: 1px solid #eee;
+			}
 
-  <div class="page-footer">
-    I'm The Footer
-  </div>
+			.invoice-box table tr.item.last td {
+				border-bottom: none;
+			}
 
-  <table>
+			.invoice-box table tr.total td:nth-child(2) {
+				border-top: 2px solid #eee;
+				font-weight: bold;
+			}
 
-    <thead>
-      <tr>
-        <td>
-          <!--place holder for the fixed-position header-->
-          <div class="page-header-space"></div>
-        </td>
-      </tr>
-    </thead>
+			@media only screen and (max-width: 600px) {
+				.invoice-box table tr.top table td {
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
 
-    <tbody>
-      <tr>
-        <td>
-          <!--*** CONTENT GOES HERE ***-->
-          <div class="page">PAGE 1</div>
-          <div class="page">PAGE 2</div>
-          <div class="page" style="line-height: 3;">
-            PAGE 3 - Long Content
-            <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus eu consectetur rutrum. Praesent tempor facilisis dapibus. Aliquam cursus diam ac vehicula pulvinar. Integer lacinia non odio et condimentum. Aenean faucibus cursus
-            mi, sed interdum turpis sagittis a. Quisque quis pellentesque mi. Ut erat eros, posuere sed scelerisque ut, pharetra vitae tellus. Suspendisse ligula sapien, laoreet ac hendrerit sit amet, viverra vel mi. Pellentesque faucibus nisl et dolor
-            pharetra, vel mattis massa venenatis. Integer congue condimentum nisi, sed tincidunt velit tincidunt non. Nulla sagittis sed lorem pretium aliquam. Praesent consectetur volutpat nibh, quis pulvinar est volutpat id. Cras maximus odio posuere
-            suscipit venenatis. Donec rhoncus scelerisque metus, in tempus erat rhoncus sed. Morbi massa sapien, porttitor id urna vel, volutpat blandit velit. Cras sit amet sem eros. Quisque commodo facilisis tristique. Proin pellentesque sodales rutrum.
-            Vestibulum purus neque, congue vel dapibus in, venenatis ut felis. Donec et ligula enim. Sed sapien sapien, tincidunt vitae lectus quis, ultricies rhoncus mi. Nunc dapibus nulla tempus nunc interdum, sed facilisis ex pellentesque. Nunc vel
-            lorem leo. Cras pharetra sodales metus. Cras lacus ex, consequat at consequat vel, laoreet ac dui. Curabitur aliquam, sapien quis congue feugiat, nisi nisl feugiat diam, sed vehicula velit nulla ac nisl. Aliquam quis nisi euismod massa blandit
-            pharetra nec eget nunc. Etiam eros ante, auctor sit amet quam vel, fringilla faucibus leo. Morbi a pulvinar nulla. Praesent sed vulputate nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo
-            mollis iaculis. Maecenas consectetur enim vitae mollis venenatis. Ut scelerisque pretium orci id laoreet. In sit amet pharetra diam. Vestibulum in molestie lorem. Nunc gravida, eros non consequat fermentum, ex orci vestibulum orci, non accumsan
-            sem velit ac lectus. Vivamus malesuada lacus nec velit dignissim, ac fermentum nulla pretium. Aenean mi nisi, convallis sed tempor in, porttitor eu libero. Praesent et molestie ante. Duis suscipit vitae purus sit amet aliquam. Vestibulum lectus
-            justo, lobortis a purus a, dapibus efficitur metus. Suspendisse potenti. Duis dictum ex lorem. Suspendisse nec ligula consectetur magna hendrerit ullamcorper et eget mauris. Etiam vestibulum sodales diam, eget venenatis nunc luctus quis. Ut
-            fermentum placerat neque nec elementum. Praesent orci erat, rhoncus vitae est eu, dictum molestie metus. Cras et fermentum elit. Aenean eget augue lacinia, varius ante in, ullamcorper dolor. Cras viverra purus non egestas consectetur. Nulla
-            nec dolor ac lectus convallis aliquet sed a metus. Suspendisse eu imperdiet nunc, id pulvinar risus. Maecenas varius sagittis est, vel fermentum risus accumsan at. Vestibulum sollicitudin dui pharetra sapien volutpat, id convallis mi vestibulum.
-            Phasellus commodo sit amet lorem quis imperdiet. Proin nec diam sed urna euismod ultricies at sed urna. Quisque ornare, nulla et vehicula ultrices, massa purus vehicula urna, ac sodales lacus leo vitae mi. Sed congue placerat justo at placerat.
-            Aenean suscipit fringilla vehicula. Quisque iaculis orci vitae arcu commodo maximus. Maecenas nec nunc rutrum, cursus elit quis, porttitor sapien. Sed ac hendrerit ipsum, lacinia fringilla velit. Donec ultricies feugiat dictum.
-          </div>
-        </td>
-      </tr>
-    </tbody>
+				.invoice-box table tr.information table td {
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
+			}
 
-    <tfoot>
-      <tr>
-        <td>
-          <!--place holder for the fixed-position footer-->
-          <div class="page-footer-space"></div>
-        </td>
-      </tr>
-    </tfoot>
+			/** RTL **/
+			.invoice-box.rtl {
+				direction: rtl;
+				font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+			}
 
-  </table>
+			.invoice-box.rtl table {
+				text-align: right;
+			}
 
-</body>
+			.invoice-box.rtl table tr td:nth-child(2) {
+				text-align: left;
+			}
+		</style>
+	</head>
 
+	<body>
+		<div class="invoice-box">
+			<table cellpadding="0" cellspacing="0">
+				<tr class="top">
+					<td colspan="2">
+						<table>
+							<tr>
+								<td class="title">
+									<img
+										src="https://sparksuite.github.io/simple-html-invoice-template/images/logo.png"
+										style="width: 100%; max-width: 300px"
+									/>
+								</td>
+
+								<td>
+									Invoice #: 123<br />
+									Created: January 1, 2023<br />
+									Due: February 1, 2023
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="information">
+					<td colspan="2">
+						<table>
+							<tr>
+								<td>
+									Sparksuite, Inc.<br />
+									12345 Sunny Road<br />
+									Sunnyville, CA 12345
+								</td>
+
+								<td>
+									Acme Corp.<br />
+									John Doe<br />
+									john@example.com
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="heading">
+					<td>Payment Method</td>
+
+					<td>Check #</td>
+				</tr>
+
+				<tr class="details">
+					<td>Check</td>
+
+					<td>1000</td>
+				</tr>
+
+				<tr class="heading">
+					<td>Item</td>
+
+					<td>Price</td>
+				</tr>
+
+				<tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+        <tr class="item">
+					<td>Website design</td>
+
+					<td>$300.00</td>
+				</tr>
+
+				<tr class="item">
+					<td>Hosting (3 months)</td>
+
+					<td>$75.00</td>
+				</tr>
+
+				<tr class="item last">
+					<td>Domain name (1 year)</td>
+
+					<td>$10.00</td>
+				</tr>
+
+				<tr class="total">
+					<td></td>
+
+					<td>Total: $385.00</td>
+				</tr>
+			</table>
+		</div>
+	</body>
 </html>

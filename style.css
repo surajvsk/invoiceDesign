@@ -1,0 +1,60 @@
+body {
+    font-size: 12px;
+    padding: 5px;
+}
+
+@media print {
+    body {
+        font-size: 10px;
+    }
+
+    .image-cell {
+        text-align: right;
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+    }
+
+    table {
+        page-break-inside: avoid;
+        border-spacing: 10px;
+    }
+
+  
+ 
+}
+
+
+
+.duty_summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.duty_summary table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.image-cell {
+    text-align: right;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-content {
+    position: relative;
+    top: 230px;
+}
+
+@page {
+    margin: 2mm
+}

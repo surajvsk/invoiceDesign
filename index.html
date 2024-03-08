@@ -5,56 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link href="style.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body {
-            font-size: 12px;
-        }
-
-        @media print {
-            body {
-                font-size: 10px;
-            }
-            .image-cell {
-            text-align: right;
-        }
-
-        }
-        .duty_summary ul{
-            list-style: none;
-            padding: 0;
-        }
-        .duty_summary table{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        .image-cell {
-            text-align: right;
-        }
-
-        tr {
-            margin: 0;
-            padding: 0;
-        }
-
-        .header{
-            position:fixed;
-            width: 100%;
-            top: 0mm;
-            border-bottom: 1px solid black; /* for demo */
-            background: yellow; /* for demo */
-        }
-        
-
-        .main-content{
-            position: relative;
-            top:176px;
-        }
-        @page {
-  margin: 2mm
-}
-    </style>
 </head>
 
 <body>
@@ -85,7 +39,6 @@
             </tr>
         </table>
     </div>
-    <div class="page-header-space"></div>
     <div class="main-content">
         <div class="client-details">
             <table class="w-100">
@@ -214,10 +167,10 @@
             <table class="w-100">
                 <thead>
                     <tr class="border border-2">
-                        <td colspan="5" class=" text-center">DUTY SUMMARY</td>
+                        <td colspan="5" class="text-center">DUTY SUMMARY</td>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="border border-2">
                     <tr>
                         <td>
                             <ul>
@@ -285,10 +238,10 @@
     
     
         <div class="fast_tag_toll_summary  mt-4">
-            <table class="table-bordered  w-100">
+            <table class="w-100 table-bordered">
                 <thead>
                     <tr>
-                        <td colspan="5" class=" text-center">FasTag Toll Summary</td>
+                        <td colspan="5" class="text-center ">FasTag Toll Summary</td>
                     </tr>
                     <tr>
                         <td>Duty Slip No</td>
@@ -527,96 +480,7 @@
                     <div class="col-md-2 col-sm-2">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
                     </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
-                    </div>
+           
                     <div class="col-md-2 col-sm-2">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
                     </div>
