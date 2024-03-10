@@ -4,24 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
     <link href="style.css" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="header">
-        <table class=" w-100">
+        <table class="w-100">
             <tr>
-                <td><img src="image/logo.png" width="200"></td>
+                <td><img src="image/logo.png" width="270"></td>
                 <td>Vikas Center, S V Road, BEST Colony, Santacruz West,
                     Mumbai,<br>Maharashtra 400054, India<br>Tel.: 9619495878<br>Email: reservations@autoriders.in
                 </td>
                 <td rowspan="2" class="image-cell">
                     <img src="image/qr.jpg" class="text-center" width="150" height="150">
-                  </td>
+                </td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -33,7 +31,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="border border-2" style="text-align:center" colspan="3">
+                <td class="border border-2 font-bold" style="text-align:center" colspan="3">
                     TAX INVOICE
                 </td>
             </tr>
@@ -42,7 +40,7 @@
     <div class="main-content">
         <div class="client-details">
             <table class="w-100">
-                <tr>
+                <tr class="font-bold">
                     <td colspan="3">SHELL INDIA MARKETS PVT LTD</td>
                     <td colspan="3">*Original for recipient</td>
                 </tr>
@@ -51,25 +49,25 @@
                     <td colspan="3">Invoice Number:MUM/C/2402/00225</td>
                 </tr>
                 <tr>
-                    <td>GSTIN :27AAICS1404P1Z3</td>
-                    <td>State: Maharashtra</td>
-                    <td>State Code: 27</td>
-                    <td>Place Of Supply: Maharashtra</td>
-                    <td>PAN No:AAICS1404P</td>
-                    <td>Invoice Date :01-02-2024</td>
+                    <td><span class="font-bold">GSTIN :</span>27AAICS1404P1Z3</td>
+                    <td><span class="font-bold">State:</span> Maharashtra</td>
+                    <td><span class="font-bold">State Code:</span> 27</td>
+                    <td><span class="font-bold">Place Of Supply:</span> Maharashtra</td>
+                    <td><span class="font-bold">PAN No:</span>AAICS1404P</td>
+                    <td><span class="font-bold">Invoice Date :</span>01-02-2024</td>
                 </tr>
             </table>
         </div>
-      
+
         <div class="item-list">
             <table class=" w-100">
-                <thead>
+                <thead class="border border-2">
                     <tr>
-                        <td >SR</td>
-                        <td>DESCRIPTION</td>
-                        <td>RATE</td>
-                        <td>QTY</td>
-                        <td>AMOUNT</td>
+                        <th>SR</th>
+                        <th>DESCRIPTION</th>
+                        <th>RATE</th>
+                        <th>QTY</th>
+                        <th>AMOUNT</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -102,7 +100,7 @@
                         <td>90.00</td>
                     </tr>
                 </tbody>
-                <tfoot >
+                <tfoot>
                     <tr class="border border-2">
                         <td></td>
                         <td></td>
@@ -139,109 +137,117 @@
                         <td>102.00</td>
                     </tr>
                     <tr class="border border-2">
-                        <td colspan="3">In Words: Rupees Two Thousand One Hundred Forty Two Only</td>
+                        <td colspan="3"><span class="font-bold">In Words:</span> Rupees Two Thousand One Hundred Forty
+                            Two Only</td>
                         <td>TOTAL</td>
                         <td>2142.00</td>
                     </tr>
                     <tr>
-                        <td>GSTIN: 27AAACA4897J1ZA</td>
-                        <td>HSN./SAC NO: 996601</td>
-                        <td>PAN NO: AAACA4897J</td>
-                        <td>CIN: L70120MH1985PLC037017</td>
-                        <td>LUT: AD270323025994Y-16/03/2023</td>
+                        <td><span class="font-bold">GSTIN:</span> 27AAACA4897J1ZA</td>
+                        <td><span class="font-bold">HSN./SAC NO:</span> 996601</td>
+                        <td><span class="font-bold">PAN NO:</span> AAACA4897J</td>
+                        <td><span class="font-bold">CIN:</span> L70120MH1985PLC037017</td>
+                        <td><span class="font-bold">LUT:</span> AD270323025994Y-16/03/2023</td>
                     </tr>
                     <tr>
                         <td colspan="5">Classification of Service - RENT A CAB SCHEME OPERATOR</td>
                     </tr>
                     <tr>
                         <td colspan="5">Bank Details: BANK NAME: KARUR VYASA
-                            BANK BANK ADDRESS: Ghatkopar Mumbai 4000077 A/C NO: 2125221000000012 IFSC CODE: KVBL0002125 This
+                            BANK BANK ADDRESS: Ghatkopar Mumbai 4000077 A/C NO: 2125221000000012 IFSC CODE: KVBL0002125
+                            This
                             is electronically generated invoice and does not require signature.</td>
                     </tr>
                 </tfoot>
             </table>
         </div>
-    
-    
+
+
         <div class="duty_summary  mt-4">
             <table class="w-100">
                 <thead>
                     <tr class="border border-2">
-                        <td colspan="5" class="text-center">DUTY SUMMARY</td>
+                        <td colspan="5" class="text-center font-bold">DUTY SUMMARY</td>
                     </tr>
                 </thead>
                 <tbody class="border border-2">
                     <tr>
                         <td>
                             <ul>
-                                <li><strong>Service City:</strong> MUMBAI</li>
-                                <li><strong>Source BR:</strong> MUM</li>
-                                <li><strong>Cost Center:</strong> Demo123</li>
-                                <li><strong>Vehicle Group:</strong> MUV- Crysta</li>
-                                <li><strong>Vehicle Registration No:</strong> MH02ER5315</li>
-                                <li><strong>Duty Slip No.:</strong> MUM/DSN/2402/02632</li>
-                                <li><strong>Duty Type:</strong> 08 Hrs./80 Kms</li>
-                                <li><strong>Passengers:</strong> Mr Mudhaffar Abdulrahman</li>
-                                <li><strong>Booker Name:</strong> Kapil Gala</li>
-                              </ul>                                              
+                                <li><span class="font-bold">Service City:</span> MUMBAI</li>
+                                <li><span class="font-bold">Source BR:</span> MUM</li>
+                                <li><span class="font-bold">Cost Center:</span> Demo123</li>
+                                <li><span class="font-bold">Vehicle Group:</span> MUV- Crysta</li>
+                                <li><span class="font-bold">Vehicle Registration No:</span> MH02ER5315</li>
+                                <li><span class="font-bold">Duty Slip No.:</span> MUM/DSN/2402/02632</li>
+                                <li><span class="font-bold">Duty Type:</span> 08 Hrs./80 Kms</li>
+                                <li><span class="font-bold">Passengers:</span> Mr Mudhaffar Abdulrahman</li>
+                                <li><span class="font-bold">Booker Name:</span> Kapil Gala</li>
+                            </ul>
                         </td>
                         <td>
-                        <ul>
-                            <li><strong>Start Date:</strong> 21/02/2024 07:00 | KMS: 57707</li>
-                            <li><strong>End Date:</strong> 22/02/2024 00:20 | KMS: 57800</li>
-                            <li><strong>Total Hour:</strong> 17:20 Hr | <strong>Total Km:</strong> 93 Km</li>
-                            <li><strong>Total Amount:</strong> 6855.00</li>
-                            <li><strong>Pick Up:</strong> 76, Saki Vihar Rd, Budhia Jadhav Wadi, Marol, Andheri East, Mumbai, Maharashtra 400072, India</li>
-                            <li><strong>Drop:</strong> 87, Aarey Rd, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087, In</li>
-                          </ul>
+                            <ul>
+                                <li><span class="font-bold">Start Date:</span> 21/02/2024 07:00 | KMS: 57707</li>
+                                <li><span class="font-bold">End Date:</span> 22/02/2024 00:20 | KMS: 57800</li>
+                                <li><span class="font-bold">Total Hour:</span> 17:20 Hr | <span class="font-bold">Total
+                                        Km:</span> 93 Km</li>
+                                <li><span class="font-bold">Total Amount:</span> 6855.00</li>
+                                <li><span class="font-bold">Pick Up:</span> 76, Saki Vihar Rd, Budhia Jadhav Wadi,
+                                    Marol, Andheri East, Mumbai, Maharashtra 400072, India</li>
+                                <li><span class="font-bold">Drop:</span> 87, Aarey Rd, Kailash Nagar, Mayur Nagar,
+                                    Morarji Nagar, Powai, Mumbai, Maharashtra 400087, In</li>
+                            </ul>
                         </td>
                         <td>
                             <img src="/image/Signature.png" width="100">
-                             <h6>Guest Signature</h6>
+                            <h6>Guest Signature</h6>
                         </td>
                         <td><img src="/image/Map.PNG" width="200"></td>
                     </tr>
                     <tr>
                         <td>
                             <ul>
-                                <li><strong>Service City:</strong> MUMBAI</li>
-                                <li><strong>Source BR:</strong> MUM</li>
-                                <li><strong>Cost Center:</strong> Demo123</li>
-                                <li><strong>Vehicle Group:</strong> MUV- Crysta</li>
-                                <li><strong>Vehicle Registration No:</strong> MH02ER5315</li>
-                                <li><strong>Duty Slip No.:</strong> MUM/DSN/2402/02632</li>
-                                <li><strong>Duty Type:</strong> 08 Hrs./80 Kms</li>
-                                <li><strong>Passengers:</strong> Mr Mudhaffar Abdulrahman</li>
-                                <li><strong>Booker Name:</strong> Kapil Gala</li>
-                              </ul>                                              
+                                <li><span class="font-bold">Service City:</span> MUMBAI</li>
+                                <li><span class="font-bold">Source BR:</span> MUM</li>
+                                <li><span class="font-bold">Cost Center:</span> Demo123</li>
+                                <li><span class="font-bold">Vehicle Group:</span> MUV- Crysta</li>
+                                <li><span class="font-bold">Vehicle Registration No:</span> MH02ER5315</li>
+                                <li><span class="font-bold">Duty Slip No.:</span> MUM/DSN/2402/02632</li>
+                                <li><span class="font-bold">Duty Type:</span> 08 Hrs./80 Kms</li>
+                                <li><span class="font-bold">Passengers:</span> Mr Mudhaffar Abdulrahman</li>
+                                <li><span class="font-bold">Booker Name:</span> Kapil Gala</li>
+                            </ul>
                         </td>
                         <td>
-                        <ul>
-                            <li><strong>Start Date:</strong> 21/02/2024 07:00 | KMS: 57707</li>
-                            <li><strong>End Date:</strong> 22/02/2024 00:20 | KMS: 57800</li>
-                            <li><strong>Total Hour:</strong> 17:20 Hr | <strong>Total Km:</strong> 93 Km</li>
-                            <li><strong>Total Amount:</strong> 6855.00</li>
-                            <li><strong>Pick Up:</strong> 76, Saki Vihar Rd, Budhia Jadhav Wadi, Marol, Andheri East, Mumbai, Maharashtra 400072, India</li>
-                            <li><strong>Drop:</strong> 87, Aarey Rd, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087, In</li>
-                          </ul>
+                            <ul>
+                                <li><span class="font-bold">Start Date:</span> 21/02/2024 07:00 | KMS: 57707</li>
+                                <li><span class="font-bold">End Date:</span> 22/02/2024 00:20 | KMS: 57800</li>
+                                <li><span class="font-bold">Total Hour:</span> 17:20 Hr | <span class="font-bold">Total
+                                        Km:</span> 93 Km</li>
+                                <li><span class="font-bold">Total Amount:</span> 6855.00</li>
+                                <li><span class="font-bold">Pick Up:</span> 76, Saki Vihar Rd, Budhia Jadhav Wadi,
+                                    Marol, Andheri East, Mumbai, Maharashtra 400072, India</li>
+                                <li><span class="font-bold">Drop:</span> 87, Aarey Rd, Kailash Nagar, Mayur Nagar,
+                                    Morarji Nagar, Powai, Mumbai, Maharashtra 400087, In</li>
+                            </ul>
                         </td>
                         <td>
-                             <img src="/image/Signature.png" width="100">
-                             <h6>Guest Signature</h6>
+                            <img src="/image/Signature.png" width="100">
+                            <h6>Guest Signature</h6>
                         </td>
                         <td><img src="/image/Map.PNG" width="200"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    
-    
-    
+
+
+
         <div class="fast_tag_toll_summary  mt-4">
             <table class="w-100 table-bordered">
                 <thead>
                     <tr>
-                        <td colspan="5" class="text-center ">FasTag Toll Summary</td>
+                        <td colspan="5" class="text-center font-bold">FasTag Toll Summary</td>
                     </tr>
                     <tr>
                         <td>Duty Slip No</td>
@@ -252,7 +258,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="2">SONE</td>
+                        <td rowspan="2">MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
                         <td>45.00</td>
                         <td>Vashi Toll Plaza</td>
@@ -263,7 +269,7 @@
                         <td>Vashi Toll Plaza</td>
                     </tr>
                     <tr>
-                        <td rowspan="2">SONE</td>
+                        <td rowspan="2">MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
                         <td>45.00</td>
                         <td>Vashi Toll Plaza</td>
@@ -276,13 +282,13 @@
                 </tbody>
             </table>
         </div>
-        
-    
+
+
         <div class="route_summary mt-4">
             <table class="table-bordered  w-100">
                 <thead>
                     <tr>
-                        <td colspan="5" class=" text-center">Route Summary</td>
+                        <td colspan="5" class="text-center font-bold">Route Summary</td>
                     </tr>
                     <tr>
                         <td>Duty Slip No</td>
@@ -292,47 +298,56 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td >MUM/DSN/2401/02855</td>
+                        <td>MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
-                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706 (India)</td>
+                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul
+                            West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706
+                            (India)</td>
                     </tr>
                     <tr>
-                        <td >MUM/DSN/2401/02855</td>
+                        <td>MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
-                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706 (India)</td>
+                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul
+                            West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706
+                            (India)</td>
                     </tr>
                     <tr>
-                        <td >MUM/DSN/2401/02855</td>
+                        <td>MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
-                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706 (India)</td>
+                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul
+                            West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706
+                            (India)</td>
                     </tr>
                     <tr>
-                        <td >MUM/DSN/2401/02855</td>
+                        <td>MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
-                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706 (India)</td>
+                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul
+                            West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706
+                            (India)</td>
                     </tr>
                     <tr>
-                        <td >MUM/DSN/2401/02855</td>
+                        <td>MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
-                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706 (India)</td>
+                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul
+                            West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706
+                            (India)</td>
                     </tr>
                     <tr>
-                        <td >MUM/DSN/2401/02855</td>
+                        <td>MUM/DSN/2401/02855</td>
                         <td>30-Jan-2024 05:28</td>
-                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706 (India)</td>
+                        <td>4, Tower 4, Sea Woods Estates NRI Complex Road, NRI Complex Phase 2, Seawoods Estates, Nerul
+                            West, Navi Mumbai, Maharashtra. 96 m from Metropolis Diagnostic & Healthcare, Pin-400706
+                            (India)</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    
-    
-    
-    
+
         <div class="invoice_summary mt-4">
             <table class="table-bordered w-100">
                 <thead>
                     <tr>
-                        <td colspan="15" class=" text-center">INVOICE SUMMARY</td>
+                        <td colspan="15" class=" text-center font-bold">INVOICE SUMMARY</td>
                     </tr>
                     <tr>
                         <td>Sr No.</td>
@@ -349,9 +364,7 @@
                         <td>Reporting Kms</td>
                         <td>Release Kms</td>
                         <td>Garage Clo. Kms</td>
-                        <td>Total
-                            chargea
-                            ble kms</td>
+                        <td>Total chargea ble kms</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -460,40 +473,221 @@
                 </tbody>
             </table>
         </div>
-    
+
         <div class="parking_slip mt-3 ">
-            <div class="d-flex justify-content-between border border-2">
+            <div class="d-flex justify-content-between border border-2 font-bold">
                 <div>BOOKING REFERENCE NO:. #41548ACHDUSDKL</div>
                 <div>PARKING SLIPS</div>
             </div>
             <div class="container-fluid mt-3">
                 <div class="row">
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
                     </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
                     </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
                     </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
                     </div>
-           
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
                     </div>
-                    <div class="col-md-2 col-sm-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU" class="img-fluid py-2">
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
+                    </div>
+                    <div class="col-md-2 col-sm-2 parking_slip_image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaHGnAZa4WfJN3coJ46Ete_hmE9EVvNM82Xg&usqp=CAU"
+                            class="img-fluid py-2">
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </div>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

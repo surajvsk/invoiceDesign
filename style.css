@@ -4,9 +4,6 @@ body {
 }
 
 @media print {
-    body {
-        font-size: 10px;
-    }
 
     .image-cell {
         text-align: right;
@@ -16,19 +13,21 @@ body {
         position: fixed;
         width: 100%;
         top: 0;
-
+        right: 0;
+        left: 0;
     }
 
-    table {
+    table{
         page-break-inside: avoid;
         border-spacing: 10px;
     }
 
-  
- 
+    .parking_slip .parking_slip_image {
+        page-break-before: auto;
+        page-break-inside: avoid;
+    }
+    
 }
-
-
 
 .duty_summary ul {
     list-style: none;
@@ -36,17 +35,12 @@ body {
 }
 
 .duty_summary table {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
 }
 
 .image-cell {
     text-align: right;
-}
-
-tr {
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -57,4 +51,8 @@ tr {
 
 @page {
     margin: 2mm
+}
+
+.font-bold {
+    font-weight: 600;
 }
