@@ -1,0 +1,106 @@
+body {
+    font-size: 12px;
+    padding: 5px;
+}
+
+@page {
+    size: A4 portrait;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+  }
+
+  @page {
+    orphans: 4;
+    widows: 2;
+  }
+
+@media print {
+
+    .image-cell {
+        text-align: right;
+    }
+
+    .header {
+        /* position: fixed; */
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    table{
+        page-break-inside: avoid;
+        border-spacing: 10px;
+        width: 100%;
+    }
+
+    .parking_slip .parking_slip_image {
+        page-break-before: auto;
+        page-break-inside: avoid;
+    }
+
+
+      /* .main-content {
+        position: relative;
+        top: 230px;
+    } */
+    
+
+    .limit-size {
+        max-width:25%!important;
+        padding: 5px;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  page-break-after: avoid;
+}
+/* .single-question, */
+/* table, */
+figure,
+img,
+tr,
+th,
+td {
+  page-break-inside: avoid !important;
+  max-width: 100% !important;
+}
+
+.duty_summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.duty_summary table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.image-cell {
+    text-align: right;
+}
+
+
+/* .main-content {
+    position: relative;
+    top: 230px;
+} */
+
+@page {
+    margin: 2mm
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
