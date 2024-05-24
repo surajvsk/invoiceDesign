@@ -104,3 +104,22 @@ td {
     font-weight: 600;
 }
 
+
+  .append-hash li::before {
+    content: " # ";
+  }
+
+  .autorider-stamp {
+    width: 300px;
+    position: absolute;
+    right: 0;
+  }
+
+  .autorider-stamp img {
+    width: 300px;
+  }
+
+  .bank-details {
+    list-style: none;
+    padding: 0;
+  }
