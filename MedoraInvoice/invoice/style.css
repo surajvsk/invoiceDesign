@@ -9,11 +9,9 @@ body {
     margin-bottom: 2cm;
     margin-left: 1cm;
     margin-right: 1cm;
-  }
-
-  @page {
     orphans: 4;
     widows: 2;
+    margin: 2mm
   }
 
 @media print {
@@ -41,24 +39,25 @@ body {
         page-break-inside: avoid;
     }
 
-
-      /* .main-content {
+/* 
+      .main-content {
         position: relative;
-        top: 230px;
-    } */
-    
-
-    .limit-size {
-        max-width:25%!important;
-        padding: 5px;
-        word-wrap: break-word;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        top: 0px;
     }
+     */
 
-    .duty_slip{
+
+
+    .duty_slip .card{
         page-break-inside: avoid;
     }
+
+
+    .append-hash li {
+      page-break-inside: auto; /* Allow list items to break across pages */
+        page-break-after: avoid; /* Avoid unnecessary page breaks after each list item */
+      }
+    
     
 }
 
@@ -100,9 +99,7 @@ td {
     top: 230px;
 } */
 
-@page {
-    margin: 2mm
-}
+
 
 .font-bold {
     font-weight: 600;
@@ -120,10 +117,15 @@ td {
   }
 
   .autorider-stamp img {
-    width: 300px;
+    width: 150px;
   }
 
   .bank-details {
     list-style: none;
     padding: 0;
+  }
+
+
+  .customer-singature{
+    width: 150px;
   }
