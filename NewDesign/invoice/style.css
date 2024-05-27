@@ -55,6 +55,10 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    .duty_slip{
+        page-break-inside: avoid;
+    }
     
 }
 
