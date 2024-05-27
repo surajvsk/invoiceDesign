@@ -30,9 +30,11 @@ body {
 
     table{
         page-break-inside: avoid;
-        border-spacing: 10px;
-        width: 100%;
+         border-spacing: 10px;
+      width: 100%;
     }
+
+ 
 
     .parking_slip .parking_slip_image {
         page-break-before: auto;
