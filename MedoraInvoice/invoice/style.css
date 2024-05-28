@@ -28,6 +28,10 @@ body {
         left: 0;
     }
 
+    .header img{
+      padding-right: 20px;
+    }
+
     table{
         page-break-inside: avoid;
          border-spacing: 10px;
@@ -53,11 +57,14 @@ body {
     .duty_slip .card{
         page-break-inside: avoid;
     }
+    .duty_slip .card table {
+    page-break-inside: avoid! important;margin: 4px 0 4px 0;
+  }
 
 
-    .append-hash li {
+    .append-hash ul li {
       page-break-inside: auto; /* Allow list items to break across pages */
-        page-break-after: avoid; /* Avoid unnecessary page breaks after each list item */
+      page-break-after: avoid; /* Avoid unnecessary page breaks after each list item */
       }
     
     
@@ -113,13 +120,15 @@ td {
   }
 
   .autorider-stamp {
-    width: 300px;
+    width: 200px;
     position: absolute;
     right: 0;
+    padding-bottom: 10px;
   }
 
   .autorider-stamp img {
     width: 150px;
+
   }
 
   .bank-details {
@@ -131,3 +140,7 @@ td {
   .customer-singature{
     width: 150px;
   }
+
+.main-content{
+  font-size: 12px;
+}
