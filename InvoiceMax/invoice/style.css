@@ -1,0 +1,146 @@
+/* body {
+    font-size: 12px;
+    padding: 5px;
+} */
+
+@page {
+    size: A4 portrait;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    orphans: 4;
+    widows: 2;
+    margin: 2mm
+  }
+
+@media print {
+
+    .image-cell {
+        text-align: right;
+    }
+
+    /* .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .header img{
+      padding-right: 20px;
+    } */
+
+    table{
+        page-break-inside: avoid;
+         border-spacing: 10px;
+      width: 100%;
+    }
+
+ 
+
+    .parking_slip .parking_slip_image {
+        page-break-before: auto;
+        page-break-inside: avoid;
+    }
+
+/* 
+      .main-content {
+        position: relative;
+        top: 0px;
+    }
+     */
+
+
+
+    .duty_slip .card{
+        page-break-inside: avoid;
+    }
+    .duty_slip .card table {
+    page-break-inside: avoid! important;margin: 4px 0 4px 0;
+  }
+
+
+    .append-hash ul li {
+      page-break-inside: auto; /* Allow list items to break across pages */
+      page-break-after: avoid; /* Avoid unnecessary page breaks after each list item */
+      }
+    
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  page-break-after: avoid;
+}
+/* .single-question, */
+/* table, */
+figure,
+img,
+tr,
+th,
+td {
+  page-break-inside: avoid !important;
+  max-width: 100% !important;
+}
+
+.duty_summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.duty_summary table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.image-cell {
+    text-align: right;
+}
+
+
+/* .main-content {
+    position: relative;
+    top: 230px;
+} */
+
+
+
+.font-bold {
+    font-weight: 600;
+}
+
+
+  .append-hash li::before {
+    content: " # ";
+  }
+
+  .autorider-stamp {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    padding-bottom: 10px;
+  }
+
+  .autorider-stamp img {
+    width: 150px;
+
+  }
+
+  .bank-details {
+    list-style: none;
+    padding: 0;
+  }
+
+
+  .customer-singature{
+    width: 150px;
+  }
+
+.main-content{
+  font-size: 12px;
+}

@@ -1,0 +1,17 @@
+body{
+    font-size: 11px!important;
+}
+.border-top-bottom-thik{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.border-top-bottom-line{
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.font-strong{
+    font-weight: bolder;
+}
