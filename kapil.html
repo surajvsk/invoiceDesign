@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            font-size: 11px !important;
+            font-family: "Lato", sans-serif!important;
+            font-weight: 300;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .invoice {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header, .footer {
+            display: none;
+        }
+
+        .content {
+            padding: 20mm;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            display: none;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .header, .footer {
+                position: fixed;
+                width: 100%;
+                text-align: center;
+            }
+
+            .header {
+                top: 0;
+                height: 50mm;
+                display: block;
+                border-bottom: 1px solid #000;
+                background: #fff;
+            }
+
+            .footer {
+                bottom: 0;
+                height: 20mm;
+                display: block;
+                border-top: 1px solid #000;
+                background: #fff;
+            }
+
+            .content {
+                margin-top: 35mm;
+                margin-bottom: 30mm;
+                padding-left: 20mm;
+                padding-right: 20mm;
+                box-sizing: border-box;
+            }
+
+            .page-break {
+                page-break-before: always;
+                margin-top: 60mm;
+            }
+
+            .content p {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice">
+        <div class="header">
+            <table class="w-100">
+                <tr>
+                    <td><img src="image/logo.png" width="270"></td>
+                    <td>Vikas Center, S V Road, BEST Colony, Santacruz West,
+                        Mumbai, Maharashtra 400054, India<br>Tel.: 9619495878 | Email: reservations@autoriders.in
+                    </td>
+                    <td rowspan="2" class="image-cell">
+                        <img src="image/qr.jpg" class="text-center" width="150" height="150">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <ul class="list-unstyled">
+                            <li>IRN: 1aa7fc6f03c0634f6dc5a646d34b465015beaebd38b0031c6d31220ea955a0fa</li>
+                            <li>ACK NO: 122420151191762</li>
+                            <li>ACK DATE: 12/02/2024 17:51</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold border-top-bottom-thik font-strong" style="text-align:center" colspan="3">
+                        TAX INVOICE
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="content" id="content">
+            <!-- Dynamic content goes here -->
+            <p>Item 1</p>
+            <p>Item 2</p>
+            <p>Item 3</p>
+            <p>Item 4</p>
+            <p>Item 5</p>
+            <p>Item 6</p>
+            <p>Item 7</p>
+            <p>Item 8</p>
+            <p>Item 9</p>
+            <p>Item 10</p>
+            <p>Item 11</p>
+            <p>Item 12</p>
+            <p>Item 13</p>
+            <p>Item 14</p>
+            <p>Item 15</p>
+            <p>Item 16</p>
+            <p>Item 17</p>
+            <p>Item 18</p>
+            <p>Item 19</p>
+            <p>Item 20</p>
+            <p>Item 21</p>
+            <p>Item 22</p>
+            <p>Item 23</p>
+            <p>Item 24</p>
+            <p>Item 25</p>
+            <p>Item 26</p>
+            <p>Item 27</p>
+            <p>Item 28</p>
+            <p>Item 29</p>
+            <p>Item 30</p>
+            <h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<img src="image/qr.jpg" alt="">
+            <!-- More items -->
+        </div>
+        <div class="footer">
+            <p>Footer Information</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Document loaded');
+            const content = document.getElementById('content');
+            const items = content.children;
+            const availableHeight = 110; // Height in mm
+
+            let currentPageHeight = 0;
+            let pageIndex = 0;
+
+            for (let i = 0; i < items.length; i++) {
+                const item = items[i];
+                console.log('Item:', i, 'Height:', item.offsetHeight);
+                item.style.pageBreakInside = 'avoid';
+
+                const itemHeight = item.offsetHeight * 0.264583; // Convert px to mm (1px = 0.264583mm)
+                
+                if (currentPageHeight + itemHeight > availableHeight) {
+                    console.log('Page break at item:', i);
+                    const pageBreak = document.createElement('div');
+                    pageBreak.className = 'page-break';
+                    item.before(pageBreak);
+
+                    currentPageHeight = itemHeight;
+                    pageIndex++;
+                } else {    
+                    currentPageHeight += itemHeight;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
