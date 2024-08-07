@@ -6,77 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
         body {
-    font-size: 11px !important;
-    font-family: "Lato", sans-serif !important;
-    font-weight: 300;
-    font-style: normal;
-}
+            font-size: 11px !important;
+            font-family: "Lato", sans-serif!important;
+                font-weight: 300;
+                font-style: normal;
+        }
 
-.border-top-bottom-thik {
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    width: 100%;
-}
+        .border-top-bottom-thik {
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            width: 100%;
+        }
 
-.border-bottom-thik {
-    border-bottom: 2px solid #000;
-    width: 100%;
-}
+        .border-bottom-thik{
+            border-bottom: 2px solid #000;
+            width: 100%;
+        }
 
-.border-top-bottom-line {
-    border-bottom: 2px solid #000;
-    width: 100%;
-}
+        .border-top-bottom-line {
+            border-bottom: 2px solid #000;
+            width: 100%;
+        }
 
-.font-strong {
-    font-weight: bolder;
-}
+        .font-strong {
+            font-weight: bolder;
+        }
 
-/* .duty_slip_card {
-    margin-top: 2px;
-    margin-bottom: 5px;
-    page-break-before: auto;
-    page-break-inside: avoid;
-    border: 2px solid #6b6a6a;
-    padding: 5px;
-} */
-
-/* .header {
+        .duty_slip_card {
+            margin-top: 2px;
+            margin-bottom: 5px;
+            page-break-before: auto;
+            page-break-inside: avoid;
+            border: 2px solid #6b6a6a;
+            padding: 5px;
+        }
+        .header {
     position: fixed;
     width: 100%;
-    height: 180px; 
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: #f8f8f8;
-} */
-.header {
-    position: fixed;
-    width: 100%;
-    height: 180px; /* Ensure this matches the height of your header */
+    height: 180px; /* Set this to the height of your header */
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure it stays on top */
-    background-color: #f8f8f8; /* Example background color */
 }
-
-.duty_slip_card {
-    margin-top: 2px;
-    page-break-before: auto;
-    page-break-inside: avoid;
-    border: 2px solid #6b6a6a;
-    padding: 5px;
-}
-
-@media print {
 
 .main-content {
     position: relative; /* Changed from absolute to relative */
     margin-top: 180px; /* Set this to the height of your header */
     padding: 20px;
-}
-
 }
 
     </style>
@@ -591,32 +569,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function isOverlapping(element1, element2) {
-            const rect1 = element1.getBoundingClientRect();
-            const rect2 = element2.getBoundingClientRect();
 
-            return !(
-                rect1.bottom < rect2.top ||
-                rect1.top > rect2.bottom ||
-                rect1.right < rect2.left ||
-                rect1.left > rect2.right
-            );
-        }
-
-        function checkOverlap() {
-            const header = document.querySelector('.header');
-            const dutySlipCards = document.querySelectorAll('.duty_slip_card');
-            dutySlipCards.forEach(card => {
-                if (isOverlapping(header, card)) {
-                    card.classList.add('print-adjust');
-                } else {
-                    card.classList.remove('print-adjust');
-                }
-            });
-        }
-
-        window.addEventListener('beforeprint', checkOverlap);
-        window.addEventListener('resize', checkOverlap); // Check on resize as well for responsiveness
     </script>
 </body>
 
