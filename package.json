@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@ironsoftware/ironpdf": "^2024.7.1",
     "html-pdf-node": "^1.0.8"
   }
 }

@@ -53,9 +53,6 @@ body {
     padding: 5px;
 }
 
-.print-adjust {
-    margin-top: 80px; /* Additional margin to ensure it doesn't overlap with the fixed header */
-}
 
 @media print {
     .header {
@@ -624,39 +621,7 @@ body {
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-  function isOverlapping(element1, element2) {
-    const rect1 = element1.getBoundingClientRect();
-    const rect2 = element2.getBoundingClientRect();
-
-    return !(
-        rect1.bottom < rect2.top ||
-        rect1.top > rect2.bottom ||
-        rect1.right < rect2.left ||
-        rect1.left > rect2.right
-    );
-}
-
-function checkOverlapForPrint() {
-    const header = document.querySelector('.header');
-    const mainContent = document.querySelector('.main-content');
-    const dutySlipCards = document.querySelectorAll('.duty_slip_card');
-
-    // Add a margin to the main content to ensure it does not overlap with the header
-    if (mainContent) {
-        mainContent.style.marginTop = `${header.offsetHeight}px`;
-    }
-
-    dutySlipCards.forEach(card => {
-        if (isOverlapping(header, card)) {
-            card.classList.add('print-adjust');
-            console.log('Overlap detected:', card);
-        } else {
-            card.classList.remove('print-adjust');
-        }
-    });
-}
-
-window.addEventListener('beforeprint', checkOverlapForPrint);
+  
 
     </script>
 
